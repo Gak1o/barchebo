@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .cart__item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .cart__item-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .quantity-btn {
+      padding: 0.25rem 0.5rem;
+      margin: 0 0.5rem;
+    }
+    .cart__empty {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 2rem 0;
+    }
+    .added-to-cart-message {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <!-- Copy your header from index.html here -->
+  </header>
+
+  <section class="cart section">
+    <div class="container">
+      <h2>Your Cart</h2>
+      <div class="cart__container grid">
+        <!-- Cart items will be injected here by JS -->
+      </div>
+      <div class="cart__summary">
+        <h3 class="cart__total">Total: Ksh 0</h3>
+        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <!-- Copy your footer from index.html here -->
+  </footer>
+
+  <!-- Include main.js for cart functionality -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
